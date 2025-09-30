@@ -1,0 +1,75 @@
+/* API Endpoint Styles - matching ApiPath.vue */
+.api-path {
+  display: flex;
+  align-items: center;
+  font-family: var(--vp-font-family-mono);
+}
+
+.method-badge {
+  display: inline-flex;
+  font-size: 1rem;
+  align-items: center;
+  height: 1.5em;
+  padding-inline: 0.3em;
+  margin-inline-end: 0.4em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+}
+
+.method.get {
+  background-color: #395a3d;
+  color: #c7edc7;
+}
+
+.method.post {
+  background-color: #435274;
+  color: #d9e3ff;
+}
+
+.method.put {
+  background-color: #6d4c22;
+  color: #ffdeba;
+}
+
+.method.delete {
+  background-color: #764541;
+  color: #ffdbd8;
+}
+
+.path-display {
+  color: var(--vp-c-text-1);
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  align-self: stretch;
+  color: var(--vp-c-text-2);
+  transition: all 0.2s ease;
+  opacity: 0.7;
+  background: none;
+  border: none;
+  cursor: pointer;
+  path {
+    fill: currentColor;
+    d: path(
+      "M9 18q-.8 0-1.4-.6T7 16V4q0-.8.6-1.4T9 2h9q.8 0 1.4.6T20 4v12q0 .8-.6 1.4T18 18zm0-2h9V4H9zm-4 6q-.8 0-1.4-.6T3 20V7q0-.4.3-.7T4 6t.7.3.3.7v13h10q.4 0 .7.3t.3.7-.3.7-.7.3zm4-6V4z"
+    );
+  }
+}
+
+.copy-button:hover,
+.copy-button[title*="Copied"] {
+  color: var(--vp-c-brand-1);
+  opacity: 1;
+}
+
+.copy-button[title*="Copied"] {
+  path {
+    d: path(
+      "m9.55 15.15 8.475-8.475q.3-.3.7-.3t.7.3.3.713-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713.713-.3.712.3z"
+    );
+  }
+}
