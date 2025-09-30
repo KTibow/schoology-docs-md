@@ -18,6 +18,7 @@ sidebar.push({
 export default defineConfig({
   title: "Schoology Dev Docs",
   description: "Documentation for Schoology developers",
+  base: "/schoology-docs-md/",
 
   themeConfig: {
     nav: [
