@@ -19,6 +19,9 @@ export default defineConfig({
   title: "Schoology Dev Docs",
   description: "Documentation for Schoology developers",
   base: "/schoology-docs-md/",
+  head: [
+    ["meta", { name: "algolia-site-verification", content: "C6EF93F18F189AF8" }],
+  ],
 
   themeConfig: {
     nav: [
@@ -41,7 +44,12 @@ export default defineConfig({
     ],
 
     search: {
-      provider: "local",
+      provider: "algolia",
+      options: {
+        appId: "2TAGZVIFPJ",
+        apiKey: "5cbe8d7b721f4ddf408a7357306adca8",
+        indexName: "Schoology Dev Docs (unofficial Markdown flip)",
+      },
     },
   },
 });
