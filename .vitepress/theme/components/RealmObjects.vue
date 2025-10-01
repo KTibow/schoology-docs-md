@@ -58,7 +58,7 @@ const objectsInRealm = computed(() => {
 });
 
 const getObjectUrl = (objectName: string) => {
-  return `/4-API: Objects/${objectName}.html`;
+  return `../4-API: Objects/${objectName}.html`;
 };
 </script>
 
