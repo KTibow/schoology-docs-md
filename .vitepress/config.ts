@@ -20,8 +20,12 @@ export default defineConfig({
   description: "Documentation for Schoology developers",
   base: "/schoology-docs-md/",
   head: [
-    ["meta", { name: "algolia-site-verification", content: "C6EF93F18F189AF8" }],
+    [
+      "meta",
+      { name: "algolia-site-verification", content: "C6EF93F18F189AF8" },
+    ],
   ],
+  cleanUrls: true,
 
   themeConfig: {
     nav: [
