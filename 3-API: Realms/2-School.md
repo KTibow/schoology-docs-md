@@ -108,6 +108,6 @@ Edit a specified school
 
 Delete a specified school
 
-## Objects in Schools
+## Objects and realms
 
 <RealmObjects realm="Schools" />

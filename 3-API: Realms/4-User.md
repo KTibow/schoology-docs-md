@@ -1142,6 +1142,6 @@ A shortcut for [GET `users/{current user id}`](#get-users-id).
 
 :::
 
-## Objects in Users
+## Objects and realms
 
 <RealmObjects realm="Users" />

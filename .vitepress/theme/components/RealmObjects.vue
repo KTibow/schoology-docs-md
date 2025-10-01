@@ -38,7 +38,6 @@ const expectedStructure: Record<string, string[]> = {
   "Friend Request": ["Users"],
   Invite: ["Users", "Groups", "Sections"],
   Network: ["Users"],
-  Sections: ["Users"],
   Groups: ["Users"],
   Requests: ["Users"],
   Role: [],
@@ -50,29 +49,70 @@ const expectedStructure: Record<string, string[]> = {
   Poll: [],
 };
 
+const realmsInsideRealms: Record<string, string[]> = {
+  "7-Section": ["Users", "Courses"],
+  "5-Group": ["Users"],
+};
+
+// Helper for case-insensitive matching while preserving original names
+const includesRealm = (list: string[], realm: string) =>
+  list.some((r) => r.toLowerCase() === realm.toLowerCase());
+
+// Objects that belong to the given realm (same as before, but case-insensitive)
 const objectsInRealm = computed(() => {
   return Object.entries(expectedStructure)
-    .filter(([_, realms]) => realms.includes(props.realm))
+    .filter(([_, realms]) => includesRealm(realms, props.realm))
     .map(([objectName]) => objectName)
-    .sort();
+    .sort((a, b) => a.localeCompare(b));
+});
+
+// "Realms" that live inside the current realm (e.g., Sections live inside Users)
+const innerRealmsInThisRealm = computed(() => {
+  return Object.entries(realmsInsideRealms)
+    .filter(([_, parentRealms]) => includesRealm(parentRealms, props.realm))
+    .map(([realmName]) => realmName)
+    .sort((a, b) => a.localeCompare(b));
 });
 
 const getObjectUrl = (objectName: string) => {
   return `../4-API: Objects/${objectName}.html`;
 };
+
+const getRealmUrl = (realmName: string) => {
+  return `./${realmName}.html`;
+};
 </script>
 
 <template>
-  <p v-if="objectsInRealm.length === 0">No objects exist in this realm.</p>
-  <ul v-else class="realm-objects-list">
+  <p v-if="objectsInRealm.length === 0" class="none">No objects exist in this realm.</p>
+  <ul v-if="objectsInRealm.length > 0">
     <li v-for="object in objectsInRealm" :key="object">
       <a :href="getObjectUrl(object)">{{ object }}</a>
+    </li>
+  </ul>
+
+  <hr v-if="innerRealmsInThisRealm.length > 0" />
+  <ul v-if="innerRealmsInThisRealm.length > 0">
+    <li v-for="r in innerRealmsInThisRealm" :key="r">
+      <a :href="getRealmUrl(r)">{{ r.split("-")[1] }}</a>
     </li>
   </ul>
 </template>
 
 <style scoped>
-.realm-objects-list {
+.realm-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.realm-title {
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+  font-weight: 1rem;
+}
+
+ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -81,12 +121,12 @@ const getObjectUrl = (objectName: string) => {
   margin-inline: -1rem;
 }
 
-.realm-objects-list li {
+ul li {
   margin: 0;
   flex-grow: 1;
 }
 
-.realm-objects-list a {
+ul a {
   display: block;
   padding-block: 0.25rem;
   padding-inline: 1rem;
@@ -94,7 +134,7 @@ const getObjectUrl = (objectName: string) => {
   text-decoration: none;
 }
 
-.realm-objects-list a:hover {
+ul a:hover {
   text-decoration: underline;
 }
 </style>

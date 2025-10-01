@@ -200,6 +200,6 @@ View the buildings for a school
 
 :::
 
-## Objects in Buildings
+## Objects and realms
 
 <RealmObjects realm="Buildings" />

@@ -521,6 +521,6 @@ Delete a course (cannot be undone)
 
 Delete up to 50 courses (cannot be undone). Comma-separated Schoology IDs are passed in the query string with the course_ids parameter.
 
-## Objects in Courses
+## Objects and realms
 
 <RealmObjects realm="Courses" />

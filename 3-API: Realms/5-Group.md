@@ -2,6 +2,9 @@
 
 Groups are non-academic versions of course sections; they can hold members, events, documents, etc.
 
+> [!IMPORTANT]
+> Groups are also objects. They exist in users.
+
 ## Fields
 
 | Field                         | Name                             | Description                                                                                                                                                                                                                                                                                                                                     | Type                                  |
@@ -101,6 +104,10 @@ View a list of groups in your school (paged). You can use the following paramete
 ```
 
 :::
+
+## GET `users/{id}/groups`
+
+?
 
 ## GET `groups/{id}`
 
@@ -339,6 +346,6 @@ Modify a group
 
 Delete a group (cannot be undone)
 
-## Objects in Groups
+## Objects and realms
 
 <RealmObjects realm="Groups" />

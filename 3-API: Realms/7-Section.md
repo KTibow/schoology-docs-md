@@ -2,6 +2,9 @@
 
 Teachers and students are enrolled into course sections; each section must belong to a parent course. Assignments, documents, events, and other materials are created and associated with course sections.
 
+> [!IMPORTANT]
+> Sections are also objects. They exist in users and courses.
+
 ## Fields
 
 | Field                                         | Name                        | Description                                                                                                                                                                                                                      | Type                |
@@ -132,7 +135,7 @@ View a list of sections for a course (paged). The following parameters can be ad
 }
 ```
 
-```xml
+```xml [XML]
 <?xml version="1.0" encoding="utf-8" ?>
 <result>
   <section>
@@ -226,6 +229,10 @@ View a list of sections for a course (paged). The following parameters can be ad
 ```
 
 :::
+
+## GET `users/{id}/sections`
+
+?
 
 ## GET `sections?section_school_codes=...`
 
@@ -823,6 +830,6 @@ Delete a course (cannot be undone)
 
 Delete up to 50 sections. Comma-separated Schoology IDs are passed in the query string with the `section_ids` parameter.
 
-## Objects in Sections
+## Objects and realms
 
 <RealmObjects realm="Sections" />
