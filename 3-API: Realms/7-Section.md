@@ -1,3 +1,5 @@
+# Section
+
 Teachers and students are enrolled into course sections; each section must belong to a parent course. Assignments, documents, events, and other materials are created and associated with course sections.
 
 ## Fields
