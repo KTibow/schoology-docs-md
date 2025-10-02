@@ -38,7 +38,6 @@ const expectedStructure: Record<string, string[]> = {
   "Friend Request": ["Users"],
   Invite: ["Users", "Groups", "Sections"],
   Network: ["Users"],
-  Groups: ["Users"],
   Requests: ["Users"],
   Role: [],
   "Private Messaging": [],
@@ -84,7 +83,9 @@ const getRealmUrl = (realmName: string) => {
 </script>
 
 <template>
-  <p v-if="objectsInRealm.length === 0" class="none">No objects exist in this realm.</p>
+  <p v-if="objectsInRealm.length === 0" class="none">
+    No objects exist in this realm.
+  </p>
   <ul v-if="objectsInRealm.length > 0">
     <li v-for="object in objectsInRealm" :key="object">
       <a :href="getObjectUrl(object)">{{ object }}</a>
