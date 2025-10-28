@@ -9,7 +9,7 @@ Media albums contain audio, video, and images with captions and tagging. Below a
 
 | Field                 | Name                  | Description                                                                | Type      |
 | --------------------- | --------------------- | -------------------------------------------------------------------------- | --------- |
-| `Title*`              | `title`               | The album title.                                                           | `string`  |
+| `Title`*              | `title`               | The album title.                                                           | `string`  |
 | `Description`         | `description`         | The album description.                                                     | `string`  |
 | `Comments setting`    | `setting_comments`    | Whether or not comments are enabled for media album content (`0` or `1`).  | `{0,1}`   |
 | `Member post setting` | `setting_member_post` | Whether or not non-admins can add content to the media album (`0` or `1`). | `{0,1}`   |

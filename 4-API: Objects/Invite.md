@@ -17,7 +17,7 @@ Users can receive requests to join course sections and groups. Invites represent
 | `school_name`  | School Name  | The name of the school that owns the realm related to the invite.                 | `string`  |
 | `school_id`    | School ID    | The ID of the school that owns the realm related to the invite.                   | `string`  |
 | `id`           | Invite ID    | The Schoology ID of the invite.                                                   | `integer` |
-| `created*`     | Date Created | The unix timestamp when the request was created.                                  | `string`  |
+| `created`*     | Date Created | The unix timestamp when the request was created.                                  | `string`  |
 
 \* = Required
 

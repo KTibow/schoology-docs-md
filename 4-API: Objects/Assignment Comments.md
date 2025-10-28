@@ -10,8 +10,8 @@ Comments can be made for any assignment.
 | Field              | Name              | Description                                                                                 | Type      |
 | ------------------ | ----------------- | ------------------------------------------------------------------------------------------- | --------- |
 | `id`               | ID                | The Schoology ID of the comment.                                                            | `integer` |
-| `uid*`             | User Id           | The Schoology user id of the user who created the comment.                                  | `integer` |
-| `comment*`         | Comment           | The comment text.                                                                           | `string`  |
+| `uid`*             | User Id           | The Schoology user id of the user who created the comment.                                  | `integer` |
+| `comment`*         | Comment           | The comment text.                                                                           | `string`  |
 | `created`          | Created timestamp | The Unix timestamp when the comment was created.                                            | `integer` |
 | `parent_id`        | Parent ID         | The ID of the comment being replied to.                                                     | `integer` |
 | `status`           | Comment status    | Whether the comment is deleted (`0`), available (`1`) or pending moderation approval (`3`). | `{0,1,3}` |

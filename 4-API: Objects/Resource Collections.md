@@ -7,7 +7,7 @@ Resource Collections are containers for user and group resource templates.
 | Field          | Name               | Description                                                                                                                     | Type      |
 | -------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | `id`           | Id                 | The Schoology id of the collection.                                                                                             | `integer` |
-| `title*`       | Title              | The title of the collection.                                                                                                    | `string`  |
+| `title`*       | Title              | The title of the collection.                                                                                                    | `string`  |
 | `uid`          | User Id            | The owner (user id) of the collection.                                                                                          | `integer` |
 | `is_default`   | Default Collection | Indicates default collection type: `0` = Regular collection, `1` = Default home collection, `2` = Default Downloads collection. | `0,1,2`   |
 | `shared_users` | Shared Users       | The number of users this collection is shared with.                                                                             | `integer` |

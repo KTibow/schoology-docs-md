@@ -9,7 +9,7 @@ Updates are short, Twitter-style posts shown in the Edge for a given realm. They
 
 | Field                   | Name                      | Description                                                                                        | Type                      |
 | ----------------------- | ------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------- |
-| `body*`                 | Body                      | The body text of the update.                                                                       | `string`                  |
+| `body`*                 | Body                      | The body text of the update.                                                                       | `string`                  |
 | `uid`                   | Posting user ID           | The user ID of the user who posted the update.                                                     | `string`                  |
 | `display_name`          | Posting user display name | The display name of the user who posted the update.                                                | `string`                  |
 | `last_updated`          | Last updated timestamp    | The unix timestamp of the most recent time the post was created/modified.                          | `string`                  |
