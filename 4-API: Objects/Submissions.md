@@ -2,7 +2,7 @@
 
 Formerly "Dropbox". Submissions are uniquely identified by a section id, grade item id, user id, and revision id.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Submissions exist in sections.
 
 ## Fields

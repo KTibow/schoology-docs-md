@@ -4,7 +4,7 @@ When your application is opened, Schoology appends two query string parameters (
 
 This hints allow you to show realm-specific information to the user, such as the recordings created for a specific course.
 
-> [!IMPORTANT]
+> [!NOTE]
 > You should take care to verify that the user has access to the realm hints that were passed, ensuring that they were not tampered or modified by the user.
 
 ## Realms

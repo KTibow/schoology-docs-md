@@ -2,7 +2,7 @@
 
 Comments can be made for any blog post.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Comments exist in districts, schools, users, groups, and sections.
 
 ## Fields

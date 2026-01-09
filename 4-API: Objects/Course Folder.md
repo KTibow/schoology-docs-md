@@ -2,7 +2,7 @@
 
 A course folder request returns all the contents of the folder with pointers to that piece of content if the API supports it. This includes child Folders. If the folder has a parent, there is a `<parent>` object that has all the fields of a folder object. Its location attribute will point to the parent. A folder with id = 0 is the root of the course. The contents of the folder is returned in the same order that they are in the course. Ordering does matter.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Course Folders exist in courses.
 
 ## Fields

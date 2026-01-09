@@ -2,7 +2,7 @@
 
 Attendance statuses are associated with an enrollment and a specific date. Attendance statuses are assigned to users for a specific date through enrollments.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Attendances exist in sections.
 
 ## Fields

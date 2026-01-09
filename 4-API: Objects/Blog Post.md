@@ -2,7 +2,7 @@
 
 Blog posts can be created for any realm.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Blog posts exist in districts, schools, users, groups, and sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Grading periods (marking periods) determine when a course section is active. Course sections and assignments are linked to grading periods (or marking periods). This endpoint lists all grading periods for the school. To view a list of grading periods for a specific section, see course sections. This endpoint is only available to school administrators.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grading periods exist in sections.
 
 ## Fields

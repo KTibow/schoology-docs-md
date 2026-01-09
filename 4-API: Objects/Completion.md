@@ -2,7 +2,7 @@
 
 Each user enrolled in a course section has a completion object with information about the student's progress in the section.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Completions exist in sections.
 
 ## Fields

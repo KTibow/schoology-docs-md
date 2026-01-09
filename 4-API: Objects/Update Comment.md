@@ -2,7 +2,7 @@
 
 Update Comments are comments made on updates found in the Edge for a given realm. They can be created, listed, viewed, and deleted for updates within the appropriate realm.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Update Comments exist in users, groups, and sections.
 
 ## Fields

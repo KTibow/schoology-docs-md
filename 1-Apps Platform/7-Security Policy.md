@@ -1,6 +1,6 @@
 # Security Policy
 
-> [!IMPORTANT]
+> [!NOTE]
 > Internet Explorer treats pages loaded in iFrames as 3rd party providers and is therefore very strict about the security policies it implements. If the page does not specify a security policy, it refuses to save cookies for that page and you may notice that users are unable to log into your application. To our knowledge, other browsers are not as strict and do not require a policy.
 
 We recommend adding the following HTTP header to your application on every page that works with cookies (if you are working with a coding framework, you should be able to put it on index.php or other similar page that is run with every page load):

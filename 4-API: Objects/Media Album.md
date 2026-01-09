@@ -2,7 +2,7 @@
 
 Media albums contain audio, video, and images with captions and tagging. Below are the fields and endpoints for working with media albums in the API.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Media albums exist in groups and sections.
 
 ## Fields

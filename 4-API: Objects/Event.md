@@ -2,7 +2,7 @@
 
 Events can be created for users, courses, groups, schools, or districts; all events automatically feed into the "upcoming" and "calendar" portions of the site. Assignment-related events can be viewed but cannot be modified directly.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Events exist in districts, schools, users, groups, and sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Grading groups are groups of students within a course that can be assigned specific content.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grading groups exist in sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 View a list of users in the given user's network. Optional query strings may be appended to filter results: `search` to match user names (case-insensitive, exact and partial matches) and `page` to specify the page of results (the response body limit is 30 records per page). If you need a list of users in the given user's school, call `users` instead (see API - User).
 
-> [!IMPORTANT]
+> [!NOTE]
 > Networks exist in users.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Pages can be used to display any sort of content. HTML can be used to format the content of the page to anything you like.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Pages exist in sections.
 
 ## Fields

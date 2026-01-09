@@ -2,7 +2,7 @@
 
 Grades are associated with an enrollment and an assignment. Grades are point values assigned to users for a specific assignment through enrollments.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grades exist in users and sections.
 
 ## Fields

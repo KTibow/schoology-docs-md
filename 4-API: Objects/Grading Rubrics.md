@@ -2,7 +2,7 @@
 
 Grading rubrics allow you to grade assignments and discussions using a standard of performance for your students.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grading rubrics exist in sections.
 
 ## Fields

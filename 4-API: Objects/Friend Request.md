@@ -2,7 +2,7 @@
 
 Friend requests can be sent from/received by other Schoology users in your network. You can view a list of pending requests and update (accept or deny) pending requests. For listing, you can specify the query key `created_offset` to view only requests that were created after the specified time (any format PHP's `strtotime` can interpret), for example: `/users/{user id}/requests/friends?created_offset=2010-05-14+22:23:00`.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Friend Requests exist in users.
 
 ## Fields

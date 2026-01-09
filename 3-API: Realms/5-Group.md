@@ -2,7 +2,7 @@
 
 Groups are non-academic versions of course sections; they can hold members, events, documents, etc.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Groups are also objects. They exist in users.
 
 ## Fields

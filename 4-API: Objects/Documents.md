@@ -2,7 +2,7 @@
 
 Documents are standalone file/links. Documents are currently supported in Courses and Schools. On the website, group documents are done through Resources. Documents are simple pieces of content that have one attachment — because a document must have an attachment, all returned documents include an `attachments` block. The `with_attachment` query parameter will return the same response as the request without it.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Documents exist in schools and sections.
 
 ## Fields

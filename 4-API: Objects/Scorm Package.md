@@ -2,7 +2,7 @@
 
 Scorm packages are containers for a Sharable Content Object Reference Model that can be integrated with Schoology.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Scorm packages exist in sections.
 
 ## Fields

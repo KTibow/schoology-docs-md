@@ -2,7 +2,7 @@
 
 Comments can be made for any assignment.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Comments exist in sections.
 
 ## Fields

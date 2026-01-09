@@ -2,7 +2,7 @@
 
 Media Album Comments are comments made on individual content within media albums.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Media Album Comments exist in groups and sections.
 
 ## Fields

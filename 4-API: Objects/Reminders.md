@@ -2,7 +2,7 @@
 
 Reminders are user notifications reminding them to complete an action for a given realm. The API supports viewing realm-specific reminders that mirror the functionality of the reminder widget on the web. Supported reminder types include `ungraded` (a reminder for course section admins that lists assignments and corresponding revisions that have not yet been graded) and `resubmitted` (a reminder for course section admins that lists assignments and corresponding revisions that have not yet been viewed).
 
-> [!IMPORTANT]
+> [!NOTE]
 > Reminders exist in sections.
 
 ## Fields

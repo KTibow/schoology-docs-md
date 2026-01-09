@@ -2,7 +2,7 @@
 
 Updates are short, Twitter-style posts shown in the Edge for a given realm. They contain a `body` and may include attachments (links, files, videos) or polls. The API supports listing, viewing, creating, editing, and deleting updates within the supported realms.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Updates exist in users, groups, and sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Grading categories are required for grading. Assignments without categories will be ungraded.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grading categories exist in sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Assignments are containers for coursework and tests/quizzes; every assignment has an entry in the gradebook.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Assignments exist in sections.
 
 ## Fields

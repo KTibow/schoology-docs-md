@@ -2,7 +2,7 @@
 
 Replies are comments made to discussion threads.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Discussion replies exist in districts, schools, groups, and sections.
 
 ## Fields

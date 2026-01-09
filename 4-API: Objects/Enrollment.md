@@ -2,7 +2,7 @@
 
 Enrollments are associations between users and groups or course sections. They link a user (student, teacher, or other) to a realm (group or section) and include role and status information used throughout the API.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Enrollments exist in groups and sections.
 
 ## Fields

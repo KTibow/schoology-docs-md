@@ -14,8 +14,8 @@ async function getObjectRealms() {
     const content = await readFile(`${OBJECTS_DIR}/${file}`, "utf-8");
     const objectName = basename(file, ".md");
 
-    // Extract realms from IMPORTANT section
-    const importantMatch = content.match(/> \[!IMPORTANT\]\s*>\s*(.+)/);
+    // Extract realms from NOTE section
+    const importantMatch = content.match(/> \[!NOTE\]\s*>\s*(.+)/);
     if (importantMatch) {
       const text = importantMatch[1];
       const realms = extractRealmsFromText(text);

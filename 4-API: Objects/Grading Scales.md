@@ -2,7 +2,7 @@
 
 Grading scales allow you to use non-numeric notations within grades (eg `A+`, etc). They define how grades map to percent ranges or point levels and are returned by the API as objects containing scale-level details.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Grading scales exist in sections.
 
 ## Fields

@@ -2,7 +2,7 @@
 
 Web Content Packages are website files, compressed in .zip format, that can be added to Schoology course sections.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Web Content Packages exist in sections.
 
 ## Fields

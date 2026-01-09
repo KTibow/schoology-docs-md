@@ -2,7 +2,7 @@
 
 Users can receive requests to join course sections and groups. Invites represent requests related to either a course section or a group and can be listed or updated via the API.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Invites exist in users, groups, and sections.
 
 ## Fields

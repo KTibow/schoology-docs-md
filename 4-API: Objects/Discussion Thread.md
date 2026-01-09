@@ -2,7 +2,7 @@
 
 Discussion threads can be created for all realms except users. The operations below are available for the following realms: `districts/{id}`, `schools/{id}`, `sections/{id}`, and `groups/{id}`.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Discussion threads exist in districts, schools, groups, and sections.
 
 ## Fields

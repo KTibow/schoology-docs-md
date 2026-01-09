@@ -182,5 +182,5 @@ Request Headers:
 SchoologyAPIAuthorizeUser($uid, $app_session_created);
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > Your application should ensure that the returned `api_uid` matches the current uid in the app session and compare the returned `web_session_timestamp` with the user's session_created timestamp. If either is invalid (eg, the schoology web session should have been started before the app session), you can destroy the user's session and force a logout
