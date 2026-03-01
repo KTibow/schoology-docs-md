@@ -52,7 +52,7 @@ export default defineConfig({
       options: {
         appId: "RV1H115CID",
         apiKey: "eae685b5bba42991a78f44e21f7b8d3c",
-        indexName: "Schoology Dev Docs (unofficial Markdown flip)",
+        indexName: "Main Crawler",
       },
     },
   },
