@@ -50,8 +50,8 @@ export default defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: "2TAGZVIFPJ",
-        apiKey: "5cbe8d7b721f4ddf408a7357306adca8",
+        appId: "RV1H115CID",
+        apiKey: "eae685b5bba42991a78f44e21f7b8d3c",
         indexName: "Schoology Dev Docs (unofficial Markdown flip)",
       },
     },
