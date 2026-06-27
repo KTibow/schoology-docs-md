@@ -48,12 +48,7 @@ export default defineConfig({
     ],
 
     search: {
-      provider: "algolia",
-      options: {
-        appId: "RV1H115CID",
-        apiKey: "eae685b5bba42991a78f44e21f7b8d3c",
-        indexName: "Main Crawler",
-      },
+      provider: "local",
     },
   },
 });
