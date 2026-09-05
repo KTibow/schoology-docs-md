@@ -1,0 +1,141 @@
+---
+/**
+ * Ported from `.vitepress/theme/components/RealmObjects.vue`.
+ *
+ * The Vue original was reactive for no reason — the data is a constant — so this
+ * is the same component with the `computed()` wrappers dropped. Colours come
+ * from the theme's `--vp-c-*` tokens, which are the same names the VitePress
+ * version used.
+ */
+interface Props {
+	realm: string;
+}
+
+const { realm } = Astro.props;
+
+/** Expected structure from verify-docs.js */
+const expectedStructure: Record<string, string[]> = {
+	Enrollment: ['Groups', 'Sections'],
+	Event: ['Districts', 'Schools', 'Users', 'Groups', 'Sections'],
+	'Blog Post': ['Districts', 'Schools', 'Users', 'Groups', 'Sections'],
+	'Blog Post Comment': ['Districts', 'Schools', 'Users', 'Groups', 'Sections'],
+	'Discussion Thread': ['Districts', 'Schools', 'Groups', 'Sections'],
+	'Discussion Reply': ['Districts', 'Schools', 'Groups', 'Sections'],
+	Updates: ['Users', 'Groups', 'Sections'],
+	'Update Comment': ['Users', 'Groups', 'Sections'],
+	Reminders: ['Sections'],
+	'Media Album': ['Groups', 'Sections'],
+	'Media Album Comments': ['Groups', 'Sections'],
+	Documents: ['Schools', 'Sections'],
+	Assignment: ['Sections'],
+	'Assignment Comments': ['Sections'],
+	Grade: ['Users', 'Sections'],
+	'Grading Scales': ['Sections'],
+	'Grading Rubrics': ['Sections'],
+	'Grading Categories': ['Sections'],
+	'Grading Groups': ['Sections'],
+	'Grading Periods': ['Sections'],
+	Attendance: ['Sections'],
+	Submissions: ['Sections'],
+	'Course Folder': ['Courses'],
+	Pages: ['Sections'],
+	'Scorm Package': ['Sections'],
+	'Web Content Package': ['Sections'],
+	Completion: ['Sections'],
+	'External ID': ['Users', 'Sections'],
+	'Friend Request': ['Users'],
+	Invite: ['Users', 'Groups', 'Sections'],
+	Network: ['Users'],
+	Requests: ['Users'],
+	Role: [],
+	'Private Messaging': [],
+	Search: [],
+	'Resource Collections': [],
+	'Resource Templates': [],
+	Like: [],
+	Poll: [],
+};
+
+const realmsInsideRealms: Record<string, string[]> = {
+	'7-Section': ['Users', 'Courses'],
+	'5-Group': ['Users'],
+};
+
+/**
+ * Same slug rules the content uses, so these links land on real pages. Pages are
+ * directories, so a realm page lives at `/api-realms/<realm>/` and its links out
+ * are relative to that, not to `/api-realms/`.
+ */
+const slug = (value: string) =>
+	value
+		.replace(/^\d+-/, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-|-$/g, '');
+
+const includesRealm = (list: string[], name: string) =>
+	list.some((r) => r.toLowerCase() === name.toLowerCase());
+
+const objectsInRealm = Object.entries(expectedStructure)
+	.filter(([, realms]) => includesRealm(realms, realm))
+	.map(([objectName]) => objectName)
+	.sort((a, b) => a.localeCompare(b));
+
+const innerRealmsInThisRealm = Object.entries(realmsInsideRealms)
+	.filter(([, parentRealms]) => includesRealm(parentRealms, realm))
+	.map(([realmName]) => realmName)
+	.sort((a, b) => a.localeCompare(b));
+---
+
+{objectsInRealm.length === 0 && <p class="none">No objects exist in this realm.</p>}
+{
+	objectsInRealm.length > 0 && (
+		<ul>
+			{objectsInRealm.map((object) => (
+				<li>
+					<a href={`../../api-objects/${slug(object)}/`}>{object}</a>
+				</li>
+			))}
+		</ul>
+	)
+}
+{innerRealmsInThisRealm.length > 0 && <hr />}
+{
+	innerRealmsInThisRealm.length > 0 && (
+		<ul>
+			{innerRealmsInThisRealm.map((r) => (
+				<li>
+					<a href={`../${slug(r)}/`}>{r.split('-')[1]}</a>
+				</li>
+			))}
+		</ul>
+	)
+}
+
+<style>
+	ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0;
+		margin-inline: -1rem;
+	}
+
+	ul li {
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	ul a {
+		display: block;
+		padding-block: 0.25rem;
+		padding-inline: 1rem;
+		color: var(--vp-c-brand-1);
+		text-decoration: none;
+	}
+
+	ul a:hover {
+		text-decoration: underline;
+	}
+</style>

@@ -22,15 +22,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
-        with:
-          version: latest
-      - name: Install
-        run: pnpm install
+      - uses: pnpm/setup@v2
       - name: Build
         run: pnpm build
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: .vitepress/dist
+          path: dist
       - uses: actions/deploy-pages@v4
         id: deployment
